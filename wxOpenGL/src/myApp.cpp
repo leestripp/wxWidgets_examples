@@ -22,6 +22,10 @@ myApp::myApp()
 void myApp::ToggleFullScreen()
 {
     m_frame->ShowFullScreen(! m_frame->IsFullScreen() );
+    m_frame->Refresh( false );
+    //> Leaving fullscreen, the Dice was not redrawn. This is to fix that.
+    m_frame->SetSize( wxRect(0,0,1920,1080) );
+    m_frame->Centre();
 }
 
 bool myApp::OnInit()

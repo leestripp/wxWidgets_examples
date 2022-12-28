@@ -37,6 +37,7 @@ myFrame::myFrame() : wxFrame(NULL, wxID_ANY, "wxWidgets OpenGL")
 
     SetClientSize( 1920, 1080 );
     Show();
+    Centre( wxALL );
 
     // test IsDisplaySupported() function:
     wxLogStatus( "F1: Toggle fullscreen, Spacebar: Animation, Arrow keys: Rotate - Double-buffered display %s supported", wxGLCanvas::IsDisplaySupported( attribList ) ? "is" : "not" );

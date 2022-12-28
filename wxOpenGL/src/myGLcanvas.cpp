@@ -106,7 +106,6 @@ void myGLCanvas::OnKeyDown(wxKeyEvent& event)
 
         case WXK_F1:
             wxGetApp().ToggleFullScreen();
-            Refresh( false );
             break;
 
 
