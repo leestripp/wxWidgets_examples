@@ -1,9 +1,6 @@
-
-build/
-build*/
-api_docs/docs/*
-*.user
-*.kdev4
+# dirs
+bin
+obj
 
 # Compiled Object files
 *.slo
